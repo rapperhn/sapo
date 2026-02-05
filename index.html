@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienes y Raíces El Sapo | Tu Hogar de Leyenda en Honduras</title>
+    <meta name="description"
+        content="Encuentra las mejores propiedades en Honduras con Bienes y Raíces El Sapo. Villas de lujo, casas coloniales y terrenos exclusivos.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+
+    <nav id="navbar">
+        <div class="logo-container">
+            <img src="logo_full.jpg" alt="El Sapo Logo" class="logo-img">
+            <span class="logo-text">El Sapo</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#propiedades">Propiedades</a></li>
+            <li><a href="#nosotros">Sobre Nosotros</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <a href="https://wa.me/50400000000" class="btn btn-primary">WhatsApp</a>
+    </nav>
+
+    <header class="hero" id="inicio">
+        <h1>Tu Hogar en Honduras <br> es una Leyenda</h1>
+        <p>Expertos en bienes raíces con el espíritu del campo y la visión del futuro. Encuentra tu oasis en
+            Tegucigalpa, San Pedro Sula o las Islas de la Bahía.</p>
+        <div class="hero-btns">
+            <a href="#propiedades" class="btn btn-primary">Ver Propiedades</a>
+        </div>
+    </header>
+
+    <section class="properties" id="propiedades">
+        <div class="section-header">
+            <h2>Propiedades Destacadas</h2>
+            <p>Selección exclusiva de las mejores viviendas en el país.</p>
+        </div>
+        <div class="grid">
+            <!-- Property 1 -->
+            <div class="property-card">
+                <span class="badge">Lujo</span>
+                <img src="luxury_house.png" alt="Villa Lujosa" class="property-img">
+                <div class="property-info">
+                    <h3>Villa Vista Hermosa</h3>
+                    <p class="property-location"><i data-lucide="map-pin"></i> Tegucigalpa, Honduras</p>
+                    <p class="property-price">$850,000</p>
+                </div>
+            </div>
+            <!-- Property 2 -->
+            <div class="property-card">
+                <span class="badge">Playa</span>
+                <img src="beach_house.png" alt="Casa de Playa" class="property-img">
+                <div class="property-info">
+                    <h3>The Pelican Retreat</h3>
+                    <p class="property-location"><i data-lucide="map-pin"></i> Roatán, Honduras</p>
+                    <p class="property-price">$1,200,000</p>
+                </div>
+            </div>
+            <!-- Property 3 -->
+            <div class="property-card">
+                <span class="badge">Nuevo</span>
+                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80"
+                    alt="Moderna" class="property-img">
+                <div class="property-info">
+                    <h3>Residencial El Roble</h3>
+                    <p class="property-location"><i data-lucide="map-pin"></i> San Pedro Sula, Honduras</p>
+                    <p class="property-price">$350,000</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="nosotros">
+        <div class="about-img">
+            <img src="logo_full.jpg" alt="Sobre El Sapo">
+        </div>
+        <div class="about-content">
+            <h2>Más que un Trato, una Alianza</h2>
+            <p>En **Bienes y Raíces El Sapo**, no solo vendemos propiedades; forjamos historias. Con raíces en el
+                corazón de Honduras y un carácter firme como el de un vaquero, te guiamos en la búsqueda de tu próximo
+                gran territorio.</p>
+            <br>
+            <p>Nuestra experiencia local nos permite encontrar esas joyas ocultas que otros pasan por alto. Ya sea una
+                finca en Olancho o un penthouse en la capital, nosotros te llevamos a casa.</p>
+        </div>
+    </section>
+
+    <footer id="contacto">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>El Sapo</h4>
+                <p>Bienes y Raíces de confianza en todo el territorio hondureño.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Enlaces</h4>
+                <ul>
+                    <li><a href="#" style="color: white; text-decoration: none;">Inicio</a></li>
+                    <li><a href="#" style="color: white; text-decoration: none;">Propiedades</a></li>
+                    <li><a href="#" style="color: white; text-decoration: none;">Servicios</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contacto</h4>
+                <p>Tel: +504 2200-SAPO</p>
+                <p>Email: info@elsapo.hn</p>
+                <p>Honduras, C.A.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 Bienes y Raíces El Sapo. Todos los derechos reservados.
+        </div>
+    </footer>
+
+    <script>
+        // Init Lucide Icons
+        lucide.createIcons();
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 200) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+
+</html>
